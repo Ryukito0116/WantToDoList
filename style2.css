@@ -1,14 +1,13 @@
 h1 {
-    font-weight: lighter; 
+    text-align: center;
+    font-weight: lighter;
 }
 h2 {
+    text-align: center;
     font-weight: lighter;
 }
 h3 {
-    font-weight: lighter; 
-}
-body{
-    text-align: center;
+    font-weight: lighter;
 }
 header{
     padding: 0.5em 1em;
@@ -23,28 +22,10 @@ header h1 {
 }
 .userinfo {
     border: double 5px orange;
-    padding: 0.5em 1em;
-    margin: 0 auto;
     background: -webkit-repeating-linear-gradient(-45deg, #fffbf0, #fffbf0 3px,#fff9e9 3px, #fff9e9 7px);
     background: repeating-linear-gradient(-45deg, #fffbf0, #fffbf0 3px,#fff9e9 3px, #fff9e9 7px);
-    width: 600px;
 }
-.infoBoxTop {
-    height: 50%;
-    margin: 0;
-    /*border: solid;
-    border-color: pink;
-    border-width: thin;*/
-}
-.infoBoxBottom {
-    display: flex;
-}
-.left {
-    width:35%;
-    /*border:solid;
-    border-color:red;
-    border-width: thin;*/
-}
+
 .fhoto_circle {
     width: 60%;
     height: 60%;
@@ -52,22 +33,7 @@ header h1 {
     background-color: #13bfbb;
     margin: 20% auto;
 }
-.center {
-    width:35%;
-    /*border: solid;
-    border-color: seagreen;
-    border-width: thin;*/
-}
-.right {
-    /*border: solid;
-    border-color: orange;
-    border-width: thin;*/
-    margin: 0 10px;
-    text-align: start;
-}
-.info {
-    text-align-last: justify;
-}
+
 .TitleBox {
     margin: 0 auto;
     width: 240px;
@@ -81,13 +47,8 @@ header h1 {
     margin: 0; 
     padding: 0;
 }
-/*.WantToDoList {
-    border: solid;
-    border-color: pink;
-    border-width: thin;
-}*/
 .DBlist {
-    /*width: 80%;*/
+    width: 100%;
     position: relative;
     background: #fff0cd;
     box-shadow: 0px 0px 0px 5px #fff0cd;
@@ -105,23 +66,4 @@ header h1 {
     border-style: solid;
     border-color: #ffdb88 #fff #ffdb88;
     box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
-}
-.td_0 {
-    width: 6%;
-}
-.td_1 {
-    font-size: 200%;
-    width: 43%;
-    text-align: start;
-    /*border: solid;
-    border-color: pink;
-    border-width: thin;*/
-    
-}
-.td_2 {
-    width: 15%;
-    text-align: start;
-    /*border: solid;
-    border-color: pink;
-    border-width: thin;*/
 }

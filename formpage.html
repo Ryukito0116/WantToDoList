@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>やりたい事リストの追加</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/resss/dist/ress.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
     <header>
@@ -16,8 +17,12 @@
     <form action="index.php" method="post">
         <div>
             <label>やりたい事　:  </label><input type="text" name="WhatDo"><br>
+            <label>カテゴリー　:  </label><input type="text" name="Category"><br>
+            <label>誰とやる？　:  </label><input type="text" name="WhoWith"><br>
+        </div>
         <div class="button">
             <button type="submit">メッセージを送信</button>
         </div>
     </form>
 </body>
+</html>
