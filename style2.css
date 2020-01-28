@@ -1,20 +1,41 @@
-
+h6{
+    font-weight: lighter;
+    text-align: center;
+}
 header{
     padding: 0.5em 1em;
     margin: 2em 0;
     background: #FFF;
     border-bottom: solid 1.5px #b4b4b4;
 }
-.BoxTitle{
-    text-align: center;
-    font-weight: lighter;
+.boss{
+    margin: 0 auto;
+
 }
 .userinfo {
     border: double 5px orange;
+    padding: 0.5em 1em;
+    margin: 0 auto;
     background: -webkit-repeating-linear-gradient(-45deg, #fffbf0, #fffbf0 3px,#fff9e9 3px, #fff9e9 7px);
     background: repeating-linear-gradient(-45deg, #fffbf0, #fffbf0 3px,#fff9e9 3px, #fff9e9 7px);
+    width: 600px;
 }
-
+.infoBoxTop {
+    height: 50%;
+    margin: 0 auto;
+    /*border: solid;
+    border-color: pink;
+    border-width: thin;*/
+}
+.infoBoxBottom {
+    display: flex;
+}
+.left {
+    width:35%;
+    /*border:solid;
+    border-color:red;
+    border-width: thin;*/
+}
 .fhoto_circle {
     width: 60%;
     height: 60%;
@@ -22,15 +43,21 @@ header{
     background-color: #13bfbb;
     margin: 20% auto;
 }
-.center{
-    border: solid;
-    border-color: orange;
-    border-width: thin;
+.center {
+    width:35%;
+    /*border: solid;
+    border-color: seagreen;
+    border-width: thin;*/
 }
-.buttons{
-    border: solid;
-    border-color: blue;
-    border-width: thin;
+.right {
+    /*border: solid;
+    border-color: orange;
+    border-width: thin;*/
+    margin: 0 10px;
+    text-align: start;
+}
+.info {
+    text-align-last: justify;
 }
 .TitleBox {
     margin: 0 auto;
@@ -44,14 +71,13 @@ header{
     margin: 0; 
     padding: 0;
 }
-.TitleSize{
-    font-size: 230%;
-}
-.TitleSize2{
-    font-size: 140%;
-}
+/*.WantToDoList {
+    border: solid;
+    border-color: pink;
+    border-width: thin;
+}*/
 .DBlist {
-    width: 100%;
+    /*width: 80%;*/
     position: relative;
     background: #fff0cd;
     box-shadow: 0px 0px 0px 5px #fff0cd;
@@ -70,36 +96,21 @@ header{
     border-color: #ffdb88 #fff #ffdb88;
     box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
 }
-
 .td_0 {
-    width: 11%;
+    width: 6%;
 }
 .td_1 {
     font-size: 200%;
     text-align: start;
-    /*border: solid;
+    border: solid;
     border-color: pink;
-    border-width: thin;*/
+    border-width: thin;
+    
 }
 .td_2 {
-    width: 33%;
-    text-align: center;
+    width: 15%;
+    text-align: start;
     /*border: solid;
-    border-color: blue;
-    border-width: thin;*/
-}
-table{
-    width: 100%;
-}
-tr{
-    width: 100%;
-    /*border: solid;
-    border-color: orange;
-    border-width: thin;*/
-}
-.status{
-    margin: 0 1em;
-    /*border: solid;
-    border-color: black;
+    border-color: pink;
     border-width: thin;*/
 }
