@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>やりたい事リスト</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/button.css">
 </head>
 <body>
 <div class="container">
@@ -16,7 +16,7 @@
     </header>
 </div>
 
-<div class="container1">
+<!-- <div class="container1">
     <div class="row justify-content-center">
         <div class="col-12 col-md-8 col-lg-6">
             <div class="userinfo">
@@ -43,7 +43,7 @@
                             <p class="info">達成率</p>
                             <div class='buttons'>
                                 <button onclick="location.href='formpage.html'">追加</button>
-                                <button>達成済み</button>
+                                <button onclick="location.href='fin.php'">達成済みリスト</button>
                             </div>
                         </div>
                     </div>
@@ -51,11 +51,11 @@
             </div>   
         </div>
     </div>
-</div>
-
+</div> -->
+<button onclick="location.href='index.php'">ホーム</button>
 <br>
 <div class="container2">
-    <p class="TitleStyle TitleSize">リスト一覧</p>
+    <p class="TitleStyle TitleSize">達成済一覧</p>
 </div>
 <br>
 
@@ -66,7 +66,7 @@
         
 
         //　SQL分でデータを取得
-        $sql = "SELECT * from goodlist";
+        $sql = "SELECT * from goodlist WHERE fin = '達成済み'";
         if ($result = $db->query($sql)) {
             echo "<div class='container'>";
             echo "<div class='row justify-content-center'>";
@@ -77,30 +77,22 @@
             while ($row = $result->fetch_assoc()) {
                 echo "<div class='row justify-content-center'>";
                 echo "<div class=' col-12 col-md-10 col-lg-10'>";
-                echo "<div class='td_1'>・" . $row["wantdoing"] . "</div>";
+                echo "<div class='td_1'>・ {$row["wantdoing"]} </div>";
                 echo "</div>";
                 echo "</div>";
                 echo "<div class='statusbox'>";
                 echo "<div class='status'>
                             <table>
                                     <tr>
-                                        <td class='td_2'>いいね：" . $row["good"] . "</td>
-                                        <td class='td_2'>やりたい：" . $row["metoo"] . "</td>
-                                        <td class='td_2'>" . $row["fin"] . "</td>
+                                        <td class='td_2'>いいね： {$row["good"]} </td>
+                                        <td class='td_2'>やりたい： {$row["metoo"]} </td>
+                                        <td class='td_2'> {$row["fin"]} </td>
                                     </tr>
                                     <tr>
                                         <td class='td_2'>
-                                            <form action='delete.php' method='post'>
+                                            <form action='checkOut.php' method='post'>
                                                 <input type='submit' value='削除' class='button1'>
-                                                <input type='hidden' name='id' value=" . $row['id'] . "></form>
-                                        </td>
-                                        <td class='td_2'>
-                                            <form action='editform.php' method='post'>
-                                                <input type='submit' value='編集' class='button2'>
-                                                <input type='hidden' name='id' value=" . $row['id'] . "></form>
-                                        </td>
-                                        <td class='td_2'><button class='button3'>完了</button>
-                                        
+                                                <input type='hidden' name='id' value= {$row['id']} ></form>
                                         </td>
                                     </tr>
                             </table><br>
