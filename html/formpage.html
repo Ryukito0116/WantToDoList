@@ -8,19 +8,40 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/resss/dist/ress.min.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/button.css">
 </head>
 <body>
+<br>
 <div class="container">
-    <header>
-        <p class="TitleSize">やりたい事リスト</h1>
-    </header>
+        <p class="TitleStyle TitleSize">やりたい事リスト</h1>
 </div>
+<div class="table_box col-12 col-md-8 col-lg-6">
+        <table>
+            <tr>
+                <td class="p_center td_size"><button class="button_size" onclick="location.href='../php/index.php'">ホーム</button></td>
+                <td class="p_center td_size"><button class="button_size" onclick="location.href='../html/formpage.html'">追加</button></td>
+                <td class="p_center td_size"><button class="button_size" onclick="location.href='../php/fin.php'">達成済み</button></td>
+            </tr>
+        </table>
+    </div>
+<br>
     <p class="BoxTitle TitleSize2">あなたがやりたいことを追加しよう。</p>
-    <form action="/php/move.php" method="post">
+    <form action="/php/move.php" method="post" class="formstyle">
         <div>
             <label>やりたい事　:  </label><input type="text" name="WhatDo"><br>
-            <label>カテゴリー　:  </label><input type="text" name="Category"><br>
-            <label>誰とやる？　:  </label><input type="text" name="WhoWith"><br>
+            <label>カテゴリー　:  </label><select name="Category">
+                <option value="遊び">遊び</option>
+                <option value="食事">食事</option>
+                <option value="旅行">旅行</option>
+                <option value="欲しいもの">欲しいもの</option>
+                <option value="自己成長">自己成長</option>
+                <option value="理想の生活習慣">理想の生活習慣</option>
+                <option value="やってみたい">やってみたい</option>
+                </select><br>
+            <label>誰とやる？　:  </label><select name="WhoWith">
+                <option value="1人で">1人で</option>
+                <option value="仲間と">仲間と</option>
+                </select><br>
         </div>
         <div class="button">
             <button type="submit">メッセージを送信</button>

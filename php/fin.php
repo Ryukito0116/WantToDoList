@@ -11,9 +11,17 @@
 </head>
 <body>
 <div class="container">
-    <header>
-        <p class="TitleSize">やりたい事リスト</p>
-    </header>
+<br>
+        <p class="TitleStyle TitleSize">やりたい事リスト</p>
+</div>
+<div class="table_box col-12 col-md-8 col-lg-6">
+    <table>
+        <tr>
+            <td class="p_center td_size"><button class="button_size" onclick="location.href='../php/index.php'">ホーム</button></td>
+            <td class="p_center td_size"><button class="button_size" onclick="location.href='../html/formpage.html'">追加</button></td>
+            <td class="p_center td_size"><button class="button_size" onclick="location.href='../php/fin.php'">達成済み</button></td>
+        </tr>
+    </table>
 </div>
 
 <!-- <div class="container1">
@@ -52,7 +60,6 @@
         </div>
     </div>
 </div> -->
-<button onclick="location.href='index.php'">ホーム</button>
 <br>
 <div class="container2">
     <p class="TitleStyle TitleSize">達成済一覧</p>

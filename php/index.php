@@ -10,12 +10,20 @@
     <link rel="stylesheet" href="../css/button.css">
 </head>
 <body>
+<br>
 <div class="container">
-    <header>
-        <p class="TitleSize">やりたい事リスト</p>
-    </header>
+        <p class="TitleStyle TitleSize">やりたい事リスト</p>
 </div>
-
+<div class="table_box col-12 col-md-8 col-lg-6">
+    <table>
+        <tr>
+            <td class="p_center td_size"><a href="../php/index.php" class="button_size btn-square-little-rich">ホーム</a></td>
+            <td class="p_center td_size"><a href="../html/formpage.html" class="button_size btn-square-little-rich">追加</a></td>
+            <td class="p_center td_size"><a href="../php/fin.php" class="button_size btn-square-little-rich">達成済み</a></td>
+        </tr>
+    </table>
+</div>
+<br>
 <div class="container1">
     <div class="row justify-content-center">
         <div class="col-12 col-md-8 col-lg-6">
@@ -55,7 +63,7 @@
 
 <br>
 <div class="container2">
-    <p class="TitleStyle TitleSize">リスト一覧</p>
+    <p class="TitleStyle2 TitleSize">リスト一覧</p>
 </div>
 <br>
 
@@ -121,7 +129,6 @@
         //　データベース切断
         $db->close();
     ?>
-</div>
 </div>
 </body>
 </html>

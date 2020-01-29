@@ -1,9 +1,14 @@
-
-header{
-    padding: 0.5em 1em;
-    margin: 2em 0;
-    background: #FFF;
-    border-bottom: solid 1.5px #b4b4b4;
+.table_box{
+    margin: 0 auto;
+    /*border: solid;
+    border-color: red;
+    border-width: thin;*/
+}
+.p_center{
+    text-align: center;
+}
+.td_size{
+    width: 33%;
 }
 .userinfo {
     border: double 5px orange;
@@ -26,6 +31,11 @@ header{
     background-color: #13bfbb;
     margin: 20% auto;
 }
+.container{
+    /*border: solid;
+    border-color: blue;
+    border-width: thin;*/
+}
 .container2{
     margin: 0 auto;
     width: 240px;
@@ -38,10 +48,21 @@ header{
     margin: 0; 
     padding: 0;
 }
+.TitleStyle2 {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    background: #FFF;
+    border-bottom: solid 1.5px #b4b4b4;
+    margin: 0; 
+    padding: 0;
+}
 .TitleSize{
     font-size: 230%;
     text-align: center;
     font-weight: lighter;
+    /*border: solid;
+    border-color: pink;
+    border-width: thin;*/
 }
 .TitleSize2{
     font-size: 140%;
